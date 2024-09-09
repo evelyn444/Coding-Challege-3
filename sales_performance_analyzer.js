@@ -18,3 +18,24 @@ else if (calculateAverageSales 7000 <= x <= 10000){
         console.log(`Satisfactory`);}
         else (calculateAverageSales < 4000 ){
             console.log(`Needs Improvement`);}
+
+// Task 3: Create a Function to Identify Top and Bottom Performers
+function findTopAndBottomPerformers;
+let topPerformer = salespeople [0];
+let bottomPerformer = salespeople[0];
+
+for (let i = 1; i < salespeople.length; i++) 
+    { const current = salespeople[i]};
+    if (current.totalSales > topPerformer.totalSales) 
+        {topPerformer = current};
+    if (current.totalSales < bottomPerformer.totalSales) 
+        {bottomPerformer = current};
+
+    const salespeople = [
+        {Name: Katie, totalSales:1000 },
+        {Name: Jonah, totalSales:3000 },
+        {Name: Ray, totalSales:1500 },
+        {Name: Sam, totalSales:2400 },
+    ];
+console.log(`Top Performer:`, topPerformer);
+console.log(`Bottom Performer:`, bottomPerformer);
