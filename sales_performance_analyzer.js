@@ -39,3 +39,19 @@ for (let i = 1; i < salespeople.length; i++)
     ];
 console.log(`Top Performer:`, topPerformer);
 console.log(`Bottom Performer:`, bottomPerformer);
+
+// Task 4: Combine Functions to Generate a Performance Report
+
+function generatePerformanceReport(salespeople);
+    const { topPerformer, bottomPerformer } = findTopAndBottomPerformers(salespeople);
+        const averageSales = calculateAverageSales(sales, quantity); 
+        const performanceRating = determinePerformanceRating(averageSales);
+
+        return `Name:` ${salesPeople}
+`Average Sales:` $${averageSales}
+`Performance Rating:` ${performanceRating}
+
+`Top Performer:` ${topPerformer}
+`Bottom Performer:` ${bottomPerformer}
+
+console.log(generatePerformanceReport(salespeople));
